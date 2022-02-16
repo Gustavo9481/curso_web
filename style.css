@@ -1,0 +1,17 @@
+p /*etiqueta simple*/
+{
+    color:black;
+}
+
+
+.container /*superselector de clase*/
+{
+    color:black;
+}
+
+
+#inicio /*superselector ID*/
+{
+    color:black;
+}
+
