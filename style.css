@@ -1,17 +1,73 @@
-p /*etiqueta simple*/
+* /*superselector general, equivale a que todo tendrá estas propiedades*/
 {
-    color:black;
+    box-sizing: border-box; /* da un ancho fijo al container, permite hacer pad interno */
 }
 
+body
+{
+    font-family: 'Roboto';
+}
+a
+{
+    display: inline-block;
+}
+
+p /*etiqueta simple*/
+{
+    color:#000000;
+}
+
+header 
+{
+    padding: 15px 0;
+}
+
+/* (espacio) .container para especificar cointainer dentro de header */
+header .container 
+{  
+    display: flex;  /* acomoda sus elementos hijos como a y nav */
+    justify-content: space-between; /* organiza los elementos hijos horizontalmente */
+    align-items: center; /* alinea los elementos eje y */
+}   
+
+header .container a
+{
+    color: red;  /* color del texto en etiquetas a */
+    text-decoration: none;  /*elimina el subrayado de los vínculos */
+    margin: 0 15px; /* margen entre los menú (arriba/abajo - lados)*/
+}
+
+header .container .logo /*clase dentro de container dentro de header */
+{
+    width: 100px;  
+}
 
 .container /*superselector de clase*/
 {
-    color:black;
+    width: 1140px; /* ancho fijo a todos los elementos clase container */
+    margin: 0 auto 0 auto; /* margen de container (arriba - derecha - abajo - izquierda)*/
+    padding-right: 15px;
+    padding-left: 15px;
+    
 }
 
 
 #inicio /*superselector ID*/
 {
-    color:black;
+    position: relative; /* mantiene el espacio que ocupa este bloque*/
 }
 
+#inicio img 
+{
+    width: 100%;
+    display: block;
+}
+
+#inicio .bloque-inicio
+{
+    position: absolute;
+    top: 290px;
+    left: 450px;
+    width: 400px;
+    text-align: center;
+}
